@@ -1,0 +1,222 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: "duke-fuente";
+    src: url(../css/fuentes/Neon\ Rave.ttf);
+
+}
+
+#fuente-index {
+    font-family: "duke-fuente";
+    font-size: 90px;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+header {
+    background-color: black;
+
+    /*flexbox*/
+
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: .9;
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    width: 120px;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    
+    
+
+}
+
+a {
+    text-decoration:none;
+
+}
+
+li a {
+     color: white;
+     padding: 5px 10px;
+     font-size: 30px;
+
+}
+
+.banner {
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 610px;
+    width: 100%;
+
+}
+
+main{
+    margin: 50px 0;
+}
+
+main img {
+    height: 700px;
+    margin: 40px 0;
+    
+    
+    
+}
+
+body {
+    background-color: black;
+}
+
+
+
+/*ADAPTAR EL ANCHO MAXIMO A TODOS LOS DISPOSITIVOS. ¡¡¡OBLIGATORIO!!!*/
+img {
+    max-width: 100%;
+}
+
+
+h1 {
+    color: rgb(136, 42, 42);
+    text-align: center;
+    font-size: 70px;
+
+}
+
+
+
+h2 {
+    color: slategray;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(47, 184, 165);
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    color: white;
+}
+
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-size {
+    font-size: 20px;
+    text-align: center;
+}
+
+.icono-redes {
+    width: 50px;
+}
+
+/*EVENTOS*/
+.titulo-grande {
+    font-size: 5rem;
+    color: rgb(253, 7, 7);
+    font-style: oblique;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    
+}
+
+.eventos-centro {
+    text-align: left;
+    margin-left: 50;
+    font-size: 3rem;}
+
+.no-linea {
+    list-style: none;
+}
+
+.media {
+    margin-left: 10px;
+    padding: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: inline-block;
+    
+
+}
+
+ 
+
+/*GALERIA*/
+
+.padre-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*DAR ESPACIO ENTRE ELEMENTOS USAMOS GAP*/
+    gap: 30px;
+    margin-top: 10px;
+
+}
+
+.padre-galeria img {
+    width: 350px;
+    height: 500px;
+    border-radius: 3px;
+}
+
+
+
+/*ENLACES MENU PRINCIPAL*/ /*INDEX*/
+
+
+.duke-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.bio {
+    color: rgb(165, 177, 175);
+    width: 50%;
+    margin-left: 500px;
+    text-align: center;
+    font-size: 15px;
+    
+    
+}
+
+/*PLAYLIST*/
+
+.playlist-titulo {
+
+    font-size: 25px;
+    margin: 10px 0;
+}
+
