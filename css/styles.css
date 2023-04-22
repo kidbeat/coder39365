@@ -21,20 +21,70 @@ html{
     font-size: 62.5%;
 }
 
+/*ENFOQUE MOBILE FIRST*/
 header {
     background-color: black;
 
     /*flexbox*/
-
     display: flex;
-    
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     opacity: .9;
     position: sticky;
     top: 0;
+    z-index: 1;
+    gap: 10px;
 }
 
+.sin-linea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (min-width: 768px) {
+    .sin-linea {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+    }
+}
+
+.carousel-item {
+    height: 450px;
+}
+
+@media (min-width: 375px) {
+    #carouselExampleSlidesOnly {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .carousel-item img {
+        height: 350px;
+        width: 100%;
+    }
+}
+
+
+
+.informacion {
+    margin: 0 auto;
+    color: rgb(165, 177, 175);
+    width: 50%;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+ 
+ 
 header img {
     width: 120px;
 }
@@ -201,13 +251,19 @@ footer {
     
 }
 
+.carousel-item img {
+    height: 380px;
+}
+
+
+
+#carouselExampleSlidesOnly {
+    width: 35%;
+    margin: 0 auto;
+}
 
 .bio {
-    color: rgb(165, 177, 175);
-    width: 50%;
-    margin-left: 500px;
-    text-align: center;
-    font-size: 15px;
+    
     
     
 }
@@ -218,5 +274,30 @@ footer {
 
     font-size: 25px;
     margin: 10px 0;
+}
+
+/*CONTACTO*/
+
+form {
+    background-color:brown;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+
+
+}
+
+.grid {
+    margin: auto;
+}
+
+.contact-form {
+    display: grid;
+    width: 100%;
+    grid-auto-columns: 100%;
+    gap: 1em;
+
 }
 
