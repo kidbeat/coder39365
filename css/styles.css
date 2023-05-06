@@ -43,7 +43,6 @@ header {
     gap: 10px;
 }
 
-
 @media (min-width: 768px) {
     .sin-linea {
         flex-direction: row;
@@ -56,21 +55,27 @@ header {
     }
 }
 
-.carousel-item {
-    height: 450px;
-}
 
-@media (min-width: 375px) {
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     #carouselExampleSlidesOnly {
-        margin: 0 auto;
+        margin: 0;
         width: 80%;
+        
     }
 
     .carousel-item img {
         height: 350px;
-        width: 100%;
+        width: 80%;
     }
-}
+    
+    
+  }
+
+
+
 
 
 
@@ -119,7 +124,7 @@ li a {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 610px;
+    height: 200px;
     width: 100%;
 
 }
@@ -252,21 +257,17 @@ footer {
 }
 
 .carousel-item img {
-    height: 380px;
+    height: 390px;
+    width: 100%;
 }
 
-
-
 #carouselExampleSlidesOnly {
-    width: 35%;
+    width: 62%;
     margin: 0 auto;
 }
 
-.bio {
-    
-    
-    
-}
+
+
 
 /*PLAYLIST*/
 
@@ -301,3 +302,23 @@ form {
 
 }
 
+.nav-link {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+
+.nav-item:hover {
+    background-color: gray;
+
+}
+
+.navbar-toggler-icon {
+    background: url('https://api.iconify.design/mdi/hamburger-menu.svg?color=white') 
+    no-repeat center center / contain;
+    
+}
+
+.navbar-nav {
+    gap: 40px;
+}
