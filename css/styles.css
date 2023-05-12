@@ -1,324 +1,166 @@
-/*RESET CSS*/
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-@font-face {
-    font-family: "duke-fuente";
-    src: url(../css/fuentes/Neon\ Rave.ttf);
-
-}
-
-#fuente-index {
-    font-family: "duke-fuente";
-    font-size: 90px;
-}
-
-
-html{
-    font-size: 62.5%;
-}
-
-/*ENFOQUE MOBILE FIRST*/
-header {
-    background-color: black;
-
-    /*flexbox*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    opacity: .9;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    gap: 10px;
-}
-
-.sin-linea {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-@media (min-width: 768px) {
-    .sin-linea {
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 768px) {
-    header {
-        flex-direction: row;
-    }
-}
-
-
-
-
-
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    #carouselExampleSlidesOnly {
-        margin: 0;
-        width: 80%;
-        
-    }
-
-    .carousel-item img {
-        height: 350px;
-        width: 80%;
-    }
-    
-    
-  }
-
-
-
-
-
-
-.informacion {
-    margin: 0 auto;
-    color: rgb(165, 177, 175);
-    width: 50%;
-    text-align: center;
-    font-size: 15px;
-
-}
-
- 
- 
-header img {
-    width: 120px;
-}
-
-ul {
-    list-style: none;
-    align-items: center;
-}
-
-nav ul {
-    display: flex;
-    gap: 20px;
-    
-    
-
-}
-
-a {
-    text-decoration:none;
-
-}
-
-li a {
-     color: white;
-     padding: 5px 10px;
-     font-size: 30px;
-
-}
-
-.banner {
-    background-image: url(../img/banner3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 200px;
-    width: 100%;
-
-}
-
-main{
-    margin: 50px 0;
-}
-
-main img {
-    height: 700px;
-    margin: 40px 0;
-    
-    
-    
-}
-
+@charset "UTF-8";
+/*Paleta de colores*/
+/*Tamaños de fuentes e iconos*/
+/*Fuente*/
+/*Resoluciones de pantallas*/
+/*Separaciones (margenes y paddings)*/
+/*MIXINS*/
+/*BOLSITAS DE CODIGO*/
 body {
-    background-color: black;
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  color: #ffffff;
 }
 
-
-
-/*ADAPTAR EL ANCHO MAXIMO A TODOS LOS DISPOSITIVOS. ¡¡¡OBLIGATORIO!!!*/
-img {
-    max-width: 100%;
+.nav-link,
+.navbar-nav .navlink.active {
+  color: #ffffff;
+}
+.nav-link:hover,
+.navbar-nav .navlink.active:hover {
+  color: rgb(128, 21, 13);
 }
 
-
-h1 {
-    color: rgb(136, 42, 42);
-    text-align: center;
-    font-size: 70px;
-
-}
-
-
-
-h2 {
-    color: slategray;
-    text-align: center;
-}
-
-h3 {
-    color: rgb(47, 184, 165);
-    font-size: 25px;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-label {
-    color: white;
-}
-
-
-footer {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-size {
-    font-size: 20px;
-    text-align: center;
-}
-
-.icono-redes {
-    width: 50px;
-}
-
-/*EVENTOS*/
-.titulo-grande {
-    font-size: 5rem;
-    color: rgb(253, 7, 7);
-    font-style: oblique;
-    margin-bottom: 50px;
-    margin-top: 70px;
-    
-}
-
-.eventos-centro {
-    text-align: left;
-    margin-left: 50;
-    font-size: 3rem;}
-
-.no-linea {
-    list-style: none;
-}
-
-.media {
-    margin-left: 10px;
-    padding: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: inline-block;
-    
-
-}
-
- 
-
-/*GALERIA*/
-
-.padre-galeria {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /*DAR ESPACIO ENTRE ELEMENTOS USAMOS GAP*/
-    gap: 30px;
-    margin-top: 10px;
-
-}
-
-.padre-galeria img {
-    width: 350px;
-    height: 500px;
-    border-radius: 3px;
-}
-
-
-
-/*ENLACES MENU PRINCIPAL*/ /*INDEX*/
-
-
-.duke-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.navbar-toggler {
+  background-color: rgb(128, 21, 13);
 }
 
 .carousel-item img {
-    height: 390px;
-    width: 100%;
+  height: 300px;
 }
 
-#carouselExampleSlidesOnly {
-    width: 62%;
-    margin: 0 auto;
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 90vh;
+  }
+}
+p {
+  font-size: 20px;
 }
 
-
-
-
-/*PLAYLIST*/
-
-.playlist-titulo {
-
-    font-size: 25px;
-    margin: 10px 0;
+h1, h2, h3 {
+  text-align: center;
+  color: rgb(128, 21, 13);
 }
 
-/*CONTACTO*/
-
-form {
-    background-color:brown;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 1em;
-    padding: 3.5em 1.5em;
-
-
+.texto-desc {
+  margin-top: 20px;
 }
 
-.grid {
-    margin: auto;
+.banner {
+  background-image: url(../img/banner3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 400px;
+  width: 100%;
 }
 
-.contact-form {
-    display: grid;
-    width: 100%;
-    grid-auto-columns: 100%;
-    gap: 1em;
-
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.nav-link {
-    color: whitesmoke;
-    font-size: 25px;
-}
-
-
-.nav-item:hover {
-    background-color: gray;
-
-}
-
-.navbar-toggler-icon {
-    background: url('https://api.iconify.design/mdi/hamburger-menu.svg?color=white') 
-    no-repeat center center / contain;
-    
+.icono-redes {
+  width: 50px;
 }
 
 .navbar-nav {
-    gap: 40px;
+  margin: 0 auto;
+  color: rgb(165, 177, 175);
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+  justify-content: space-evenly;
 }
+
+#fuente-index {
+  font-family: "duke-fuente";
+  font-size: 90px;
+}
+
+.informacion {
+  margin: 0 auto;
+  color: rgb(165, 177, 175);
+  width: 50%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.padre-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.padre-galeria img {
+  width: 350px;
+  height: 500px;
+  border-radius: 3px;
+}
+
+.video-galeria {
+  margin-top: 100px;
+  margin: 0 auto;
+}
+
+form {
+  background-color: rgb(3, 33, 41);
+  margin: auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+form .campos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main-contacto {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+}
+.botones-form {
+  color: #000;
+  background-color: rgb(128, 21, 13);
+}
+.botones-form:hover {
+  background-color: #000;
+  color: rgb(128, 21, 13);
+}
+
+/*# sourceMappingURL=styles.css.map */

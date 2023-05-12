@@ -46,45 +46,48 @@
     </header>
     <div class="banner"></div>
 
-    <main>
+    
         <h1 id="fuente-index">Contacto</h1>
-        <h2>Por contrataciones llena el formulario y nos pondremos en contacto con vos.</h2>
+        <h2>Por contrataciones o consultas envia el formulario y nos pondremos en contacto con vos.</h2>
 
-        <div class="contact-form">
+
+    <main class="main-contacto">
+
+        
 
             <form>
-                <div class="grid">
+                <div class="campos">
                     <label for="nombre-apellido"></label>
                     <input type="text" id="nombre-apellido" required placeholder="Nombre y apellido">
                 </div>
 
-                <div class="grid">
+                <div class="campos">
                     <label for="dni"></label>
                     <input type="number" id="dni" required placeholder="DNI">
                 </div>
 
-                <div class="grid">
+                <div class="campos">
                     <label for="telefono"></label>
                     <input type="tel" id="telefono" required placeholder="Teléfono">
                 </div>
 
-                <div class="grid">
+                <div class="campos">
                     <label for="email"></label>
                     <input type="email" id="email" required placeholder="Email">
                 </div>
 
-                <div class="grid">
+                <div class="campos">
                     <label for="mensaje"></label>
                     <textarea  id="mensaje" cols="30" rows="10" required placeholder="Dejame tu mensaje"></textarea>
                 </div>
 
-                <div class="grid">
-                    <input type="submit" value="Enviar formulario">
-                    <input type="reset" value="Limpiar el formulario">
-                </div>
+                
+                <input type="submit" value="Enviar formulario" class="botones-form">
+                <input type="reset" value="Limpiar el formulario" class="botones-form">
+                
             </form>
 
-        </div>
+        
     </main>
 
     <footer>

@@ -1,0 +1,85 @@
+body {
+    font-family: $fuente-principal;
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+.nav-link, 
+.navbar-nav .navlink.active {
+    color: $color-secundario;
+
+    &:hover {
+        color: $color-terciario;
+    }
+}
+
+.navbar-toggler {
+    background-color: $color-terciario;
+}
+
+
+.carousel-item img {
+    height: 300px;
+
+}
+
+@media (min-width: $tablet) {
+
+    .carousel-item img {
+
+        height: 70vh;
+
+    }
+
+}
+
+@media (min-width: $desktop) {
+
+    .carousel-item img {
+
+        height: 90vh;
+
+    }
+
+}
+
+p {
+
+    font-size: $fuente-media;
+    
+}
+    
+
+h1, h2, h3 {
+
+    text-align: center;
+    color: $color-terciario;
+    
+}
+
+.texto-desc {
+    margin-top: $espacio-chico;
+}
+
+.banner {
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 400px;
+    width: 100%;
+
+}
+
+
+footer {
+
+    margin-top: $espacio-grande;
+
+    @include flex-columna;
+}
+
+.icono-redes {
+    width: 50px;
+}
+

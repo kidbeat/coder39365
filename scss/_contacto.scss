@@ -1,0 +1,38 @@
+form {
+    background-color:rgb(3, 33, 41);
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+
+    @include flex-columna;
+    gap: $espacio-chico;
+
+    .campos {
+        @include flex-columna
+    }
+
+}
+
+.main-contacto  {
+    @include flex-columna;
+}
+
+@media (min-width: $tablet) {
+    .main-contacto {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+.botones-form {
+    color: $color-primario;
+    background-color: $color-terciario;
+    
+    &:hover {
+        background-color: $color-primario;
+        color: $color-terciario;
+    }
+}
